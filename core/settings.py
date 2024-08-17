@@ -26,11 +26,10 @@ SECRET_KEY = 'django-insecure-(_aaq2e3c#pj7l61j__%nxc0&)5s=rxegy76=k^4$t@m2*0j_z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', 'bilo-production.up.railway.app']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'bilo-production.up.railway.app']
 
-CSRF_TRUSTED_ORIGINS = ['localhost', '127.0.0.1', '127.0.0.1:8000', 'bilo-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://bilo-production.up.railway.app']
 
-SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
 # Application definition
 
 INSTALLED_APPS = [
