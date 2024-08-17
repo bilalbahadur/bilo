@@ -12,12 +12,12 @@ CMD ["sh", "-c", "/usr/games/fortune -a | cowsay"]
 
 # Kopyalama ve Python venv oluşturma komutları
 COPY . /app/.
+# Python venv oluşturma ve bağımlılıkları yükleme
 RUN python -m venv --copies /opt/venv \
     && /opt/venv/bin/pip install -r requirements.txt
 
-
+# Eğer NIXPACKS_PATH kullanıyorsanız, onu burada tanımlayın
+ENV NIXPACKS_PATH=/opt/venv/bin
 
 # PATH değişkenine venv ekleme
 ENV PATH="/opt/venv/bin:$PATH"
-# NIXPACKS_PATH çevresel değişkenini ayarlama
-ENV NIXPACKS_PATH=/opt/venv/bin:$NIXPACKS_PATH
