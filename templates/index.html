@@ -1,0 +1,1002 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Bootstrap, Parallax, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Grayrids">
+    <title>EasyBusiness</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/line-icons.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.css'%}">
+    <link rel="stylesheet" href="{% static 'css/nivo-lightbox.css'%}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
+    <link rel="stylesheet" href="{% static 'css/slicknav.css'%}">
+    <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+    <link rel="stylesheet" href="{% static 'css/main.css'%}">    
+    <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
+    <link rel="stylesheet" href="{% static 'css/sosyalmedya.css'%}">
+
+  </head>
+  <body>
+
+    <div class="ustyazi ">          
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-6 col-sm-6 col-xs-12">
+            <div class="copyright">
+              <p> Ağustos ayı %50'ye varan indirimlerden yararlanma fırsatını kaçırmayın. </a></p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-xs-12">
+            <div class="copyright">
+              <a href="#contact" class="btn btn-common page-scroll">Sizi arayalım</a>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Header Section Start -->
+    <header id="hero-area" data-stellar-background-ratio="0.5">    
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo" style="top: 50px;">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a href="index.html"  class="navbar-brand"><img class="img-fulid logo"  src="{% static 'img/logo.png'%}"  alt="" ></a>
+            <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="lnr lnr-menu"></i>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#hero-area">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#services">Hizmetlerimiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#features">Neden Biz?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#portfolios">Avantajlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="{% url 'fiyatlandirma'%}">Paketler</a>
+              </li>             
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#contact">İletişim</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+<script> 
+
+  window.onscroll = function() {
+    var navbar = document.querySelector('.navbar-header');
+    var logo = document.querySelector('.navbar-brand img');
+    
+    if (window.scrollY > 200) {  // Sayfa 50px kadar kaydırıldığında
+        navbar.classList.add('navbar-scrolled');
+        logo.src = "{% static 'img/logoo.png' %}";  // Farklı logoyu yükle
+    } else {
+        navbar.classList.remove('navbar-scrolled');
+        logo.src = "{% static 'img/logo.png' %}";  // Orijinal logoyu geri yükle
+    }
+};
+</script>
+        <!-- Mobile Menu Start -->
+        <ul class="mobile-menu">
+           <li>
+              <a class="page-scroll" href="#hero-area">Anasayfa</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#services">Hizmetlerimiz</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#features">Neden Biz?</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#portfolios">Avantajlar</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="{% url 'fiyatlandirma'%}">Paketler</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#contact">İletişim</a>
+            </li>
+        </ul>
+        <!-- Mobile Menu End -->
+
+      </nav>
+      <!-- Navbar End -->   
+      <div class="container">      
+        <div class="row justify-content-md-center">
+          <div class="col-md-10">
+            <div class="contents text-center">
+              <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Tüm Dijital İhtiyaçlarınız İçin Tek Platform</h1>
+              <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Profesyonel ekimiz işinizi büyütmek ve dijital dünyada güçlü bir varlık oluşturmak için size özel çözümler sunar </p>
+              <a href="#contact" class="btn btn-common wow fadeInUp page-scroll" data-wow-duration="1000ms" data-wow-delay="400ms">Sizi arayalım</a>
+            </div>
+          </div>
+        </div> 
+      </div>           
+    </header>
+    <!-- Header Section End --> 
+
+
+
+
+
+
+
+
+    <!-- HİZMETLERİMİZ -->
+    <section id="services" class="section">
+      <div class="container">
+          <div class="section-header">
+              <h2 class="section-title">Hizmetlerimiz</h2>
+              <hr class="lines">
+              <p class="section-subtitle">
+                  Müşterilerimize en iyi deneyimi sunmak için geniş bir yelpazede kaliteli hizmetler sunuyoruz. <br>
+                  İhtiyaçlarınıza özel çözümler sunarak, beklentilerinizi aşmayı hedefliyoruz. Uzman ekibimizle, projenizin her aşamasında yanınızdayız. Sizin için buradayız!
+              </p>
+          </div>
+          <div class="carousel-buttons">
+              <button class="carousel-btn prev" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
+              <div class="carousel">
+                  <div class="carousel-track">
+                      <div class="item-boxes">
+                          <div class="icon">
+                              <i class="lnr lnr-pencil"></i>
+                          </div>
+                          <h4>Logo Tasarımı</h4>
+                          <p>İşletmenizin kimliğini yansıtan profesyonel logolar tasarlıyoruz</p>
+                      </div>
+                      <div class="item-boxes">
+                          <div class="icon">
+                              <i class="lnr lnr-code"></i>
+                          </div>
+                          <h4>Google Ad Yönetimi</h4>
+                          <p>Google reklam kampanyalarınızı yöneterek, hedef kitlenize ulaşmanızı sağlıyoruz.</p>
+                      </div>
+                      <div class="item-boxes">
+                          <div class="icon">
+                              <i class="lnr lnr-mustache"></i>
+                          </div>
+                          <h4>ERP Paket</h4>
+                          <p>İş süreçlerinizi verimli bir şekilde yönetmek için entegre ERP çözümleri sunuyoruz.</p>
+                      </div>
+                      <div class="item-boxes">
+                          <div class="icon">
+                              <i class="lnr lnr-mustache"></i>
+                          </div>
+                          <h4>Sanal POS</h4>
+                          <p>Online satışlarınızı kolaylaştırmak için güvenli ve kullanıcı dostu sanal POS entegrasyonu sağlıyoruz.</p>
+                      </div>
+                      <div class="item-boxes">
+                          <div class="icon">
+                              <i class="lnr lnr-mustache"></i>
+                          </div>
+                          <h4>Web Site Tasarımı ve Geliştirme</h4>
+                          <p>Modern ve kullanıcı dostu web siteleri tasarlıyoruz, işletmenizin online varlığını güçlendiriyoruz.</p>
+                      </div>
+                      <div class="item-boxes">
+                          <div class="icon">
+                              <i class="lnr lnr-mustache"></i>
+                          </div>
+                          <h4>E-posta Hesabı</h4>
+                          <p>İşletmenize özel profesyonel e-posta hesapları oluşturuyoruz.</p>
+                      </div>
+                       <div class="item-boxes">
+                          <div class="icon">
+                              <i class="lnr lnr-mustache"></i>
+                          </div>
+                          <h4>Mobil Uygulama</h4>
+                          <p>İşletmeniz için özel mobil uygulamalar geliştirerek, müşterilerinize mobil cihazlar üzerinden ulaşmanızı sağlıyoruz.</p>
+                      </div>
+                      <div class="item-boxes">
+                        <div class="icon">
+                            <i class="lnr lnr-mustache"></i>
+                        </div>
+                        <h4>Blog Modülü</h4>
+                        <p>İçerik pazarlaması stratejilerinizi desteklemek için blog modülü entegrasyonu sunuyoruz..</p>
+                    </div>
+                    <div class="item-boxes">
+                      <div class="icon">
+                          <i class="lnr lnr-mustache"></i>
+                      </div>
+                      <h4>Kurumsal Marka Tasarımı</h4>
+                      <p>Markanızın kimliğini oluşturmak ve güçlendirmek için profesyonel kurumsal marka tasarımı hizmetleri sunuyoruz</p>
+                  </div>
+                  <div class="item-boxes">
+                    <div class="icon">
+                        <i class="lnr lnr-mustache"></i>
+                    </div>
+                    <h4>Sosyal Medya Yönetimi</h4>
+                    <p>Sosyal medya hesaplarınızı etkili bir şekilde yöneterek, markanızın dijital varlığını artırıyoruz.</p>
+                </div>
+                <div class="item-boxes">
+                  <div class="icon">
+                      <i class="lnr lnr-mustache"></i>
+                  </div>
+                  <h4>Meta Reklam Yönetimi</h4>
+                  <p>Meta platformlarında (Facebook, Instagram vb.) reklam kampanyalarınızı yöneterek, daha geniş bir kitleye ulaşmanızı sağlıyoruz.</p>
+              </div>
+              <div class="item-boxes">
+                <div class="icon">
+                    <i class="lnr lnr-mustache"></i>
+                </div>
+                <h4>Uygulama Mağazası</h4>
+                <p>Mobil uygulamanızın App Store ve Google Play'de yer alması için gerekli süreçleri yönetiyoruz.</p>
+            </div>
+            <div class="item-boxes">
+              <div class="icon">
+                  <i class="lnr lnr-mustache"></i>
+              </div>
+              <h4>Toplu Mail Gönderimi</h4>
+              <p>Müşterilerinize etkili e-posta kampanyaları göndererek, iletişiminizi güçlendiriyoruz.</p>
+          </div>
+          <div class="item-boxes">
+            <div class="icon">
+                <i class="lnr lnr-mustache"></i>
+            </div>
+            <h4>Aylık Raporlar</h4>
+            <p>İşletmenizin performansını ve dijital stratejilerinizin etkinliğini değerlendirmek için aylık raporlar sunuyoruz.</p>
+        </div>
+                  </div>
+              </div>
+              <button class="carousel-btn next" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+          </div>
+      </div>
+  </section>
+
+  <script>
+let currentIndex = 0;
+
+function nextSlide() {
+    const track = document.querySelector('.carousel-track');
+    const items = document.querySelectorAll('.item-boxes');
+    const totalItems = items.length;
+    const visibleItems = getVisibleItems();
+
+    if (currentIndex < totalItems - visibleItems) {
+        items[currentIndex].classList.add('hidden');
+        currentIndex++;
+        track.style.transform = `translateX(-${currentIndex * (100 / visibleItems)}%)`;
+        setTimeout(() => {
+            items[currentIndex - 1].classList.remove('hidden');
+        }, 600); // Opacity geçiş süresi ile aynı
+    }
+}
+
+function prevSlide() {
+    const track = document.querySelector('.carousel-track');
+    const items = document.querySelectorAll('.item-boxes');
+    const visibleItems = getVisibleItems();
+
+    if (currentIndex > 0) {
+        items[currentIndex + visibleItems - 1].classList.add('hidden');
+        currentIndex--;
+        track.style.transform = `translateX(-${currentIndex * (100 / visibleItems)}%)`;
+        setTimeout(() => {
+            items[currentIndex + visibleItems].classList.remove('hidden');
+        }, 600); // Opacity geçiş süresi ile aynı
+    }
+}
+
+function getVisibleItems() {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth < 480) {
+        return 1; // Telefon boyutlarında bir kart
+    } else if (screenWidth < 768) {
+        return 2; // Tablet boyutlarında iki kart
+    } else {
+        return 3; // Masaüstü boyutlarında üç kart
+    }
+}
+
+// Pencere boyutu değiştiğinde kart sayısını yeniden hesapla
+window.addEventListener('resize', () => {
+    const track = document.querySelector('.carousel-track');
+    const visibleItems = getVisibleItems();
+    track.style.transform = `translateX(-${currentIndex * (100 / visibleItems)}%)`;
+});
+
+  </script>
+    <!-- Hizmetlerimiz End -->
+
+    <!-- Neden Easybusiness Start -->
+    <section id="features" class="section" data-stellar-background-ratio="0.2">
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title">Neden EasyBusiness?</h2>
+          <hr class="lines">
+          <p class="section-subtitle"> Müşterilerimize en yüksek kalitede hizmet sunma konusundaki kararlılığımızla öne çıkıyoruz.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-md-12 col-xs-12">
+            <div class="container">
+              <div class="row">
+                 <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                    <span class="icon">
+                      <i class="lnr lnr-rocket"></i>
+                    </span>
+                    <div class="text">
+                      <h4>Profesyonel Hizmet</h4>
+                      <p>Alanında uzman ekibimizle, işletmenizin dijital ihtiyaçlarına en uygun çözümleri sunuyoruz.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                    <span class="icon">
+                      <i class="lnr lnr-laptop-phone"></i>
+                    </span>
+                    <div class="text">
+                      <h4>Kapsamlı Çözümler</h4>
+                      <p>Web tasarımından sosyal medya yönetimine, reklam kampanyalarından SEO çalışmalarına kadar geniş bir hizmet yelpazesi sunuyoruz</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                    <span class="icon">
+                      <i class="lnr lnr-layers"></i>
+                    </span>
+                    <div class="text">
+                      <h4>Esnek Paketler</h4>
+                      <p>İşletmenizin büyüklüğüne ve ihtiyaçlarına göre özelleştirilebilir paket seçeneklerimizle, size en uygun çözümleri sunuyoruz.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                    <span class="icon">
+                      <i class="lnr lnr-cog"></i>
+                    </span>
+                    <div class="text">
+                      <h4>Müşteri Odaklı Yaklaşım</h4>
+                      <p>Müşteri memnuniyetini her zaman ön planda tutuyor, size özel çözümler üretiyoruz.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-xs-12">
+            <div class="show-box">
+              <img class="" src="{% static 'img/features/feature.png'%}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Neden Easybusiness  End -->    
+
+
+    <!-- Avantajlar Section -->
+    <section id="portfolios" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title">Avantajlar</h2>
+          <hr class="lines">
+          <p class="section-subtitle">Yüksek kalite standartlarına bağlı kalıyoruz ve güvenilir hizmet sunuyoruz. Rekabetçi fiyatlarımızla bütçenize dost çözümler sağlıyoruz. Müşteri memnuniyetini her zaman ön planda tutarak, ihtiyaçlarınıza en uygun hizmeti sunmayı hedefliyoruz.</p>
+        </div>
+        <div class="row">          
+          <div class="col-md-12">
+        
+
+          <!-- Portfolio Recent Projects -->
+          <div id="portfolio" class="row">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img class="hover-gif" src="{% static 'img/portfolio/deneme1.png' %}" data-static="{% static 'img/portfolio/deneme1.png' %}" data-gif="{% static 'img/portfolio/marka.gif' %}" alt="Marka 1">
+                  
+
+                  <h4 style="color: #1c3142;font-weight: 700;font-size: 16px;text-transform: uppercase;line-height: 22px;">Marka Bilinirliğini Arttır</h4> 
+                  <p>Markanızı daha geniş kitlelere duyurarak tanınırlığınızı arttırın.</p>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design print">
+              <div class="portfolio-item">
+                <div class="shot-item">
+
+                  <img class="hover-gif" src="{% static 'img/portfolio/deneme2.png' %}" data-static="{% static 'img/portfolio/deneme2.png' %}" data-gif="{% static 'img/portfolio/goruntulenme.gif' %}" alt="Marka 2">
+                  <h4 style="color: #1c3142;font-weight: 700;font-size: 16px;text-transform: uppercase;line-height: 22px;">Görüntülenmelerini Arttır</h4> 
+                  <p>Dijital varlığınızı güçlendirerek daha fazla ziyaretçi çekin.</p>
+                   
+                 
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img class="hover-gif" src="{% static 'img/portfolio/deneme3.png' %}" data-static="{% static 'img/portfolio/deneme3.png' %}" data-gif="{% static 'img/portfolio/digitalkimlik.gif' %}" alt="Marka 3">
+                 
+                  <h4 style="color: #1c3142;font-weight: 700;font-size: 16px;text-transform: uppercase;line-height: 22px;">Dijital Kimliğini Oluştur/Geliştir</h4> 
+                  <p>Profesyonel dijital kimliğinizle güvenilir ve akılda kalıcı olun.</p>
+                 
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development design">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img class="hover-gif" src="{% static 'img/portfolio/deneme4.png' %}" data-static="{% static 'img/portfolio/deneme4.png' %}" data-gif="{% static 'img/portfolio/ekucret.gif' %}" alt="Marka 4">
+     
+                  <h4 style="color: #1c3142;font-weight: 700;font-size: 16px;text-transform: uppercase;line-height: 22px;">Ek Ücretler Yok</h4> 
+                  <p>Sürpriz maliyetler olmadan, şeffaf ve sabit fiyatlarla hizmet alın.</p>
+                 
+                </div>             
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img class="hover-gif" src="{% static 'img/portfolio/deneme5.png' %}" data-static="{% static 'img/portfolio/deneme5.png' %}" data-gif="{% static 'img/portfolio/reklam.gif' %}" alt="Marka 5">
+                  <img src="img/portfolio/reklam.gif" alt="" />  
+                  <h4 style="color: #1c3142;font-weight: 700;font-size: 16px;text-transform: uppercase;line-height: 22px;">Reklam Kampanyalarını Güçlendir</h4> 
+                  <p>Hedef kitlenize yönelik etkili reklam kampanyaları oluşturun.</p>
+                 
+                </div>                
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix print design">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img class="hover-gif" src="{% static 'img/portfolio/deneme6.png' %}" data-static="{% static 'img/portfolio/deneme6.png' %}" data-gif="{% static 'img/portfolio/kulaklik.gif' %}" alt="Marka 6">
+                  <h4 style="color: #1c3142;font-weight: 700;font-size: 16px;text-transform: uppercase;line-height: 22px;">7/24 Telefon Desteği</h4> 
+                  <p>Her zaman yanınızdayız, ihtiyaç duyduğunuz her an bize ulaşabilirsiniz.</p>
+                 
+                </div>               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+   
+      <!-- Container Ends -->
+    </section>
+    <!-- Avantajlar Ends --> 
+
+    <!-- yazı Section -->
+    <section class="video-promo section counterss ">
+      <div class="container ">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+              <div class="video-promo-content text-center">
+                <h2 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Projelerinizi birlikte detaylandıralım!</h2>
+                <p class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Bizimle iletişime geçin ve projelerinizi hayata geçirmek için uzman ekibimizle nasıl işbirliği yapabileceğimizi öğrenin. 
+                  Size özel çözümler sunarak projelerinizi en iyi şekilde gerçekleştirelim.</p>
+                  <a href="#contact" class="btn btn-common wow fadeInUp page-scroll" data-wow-duration="1000ms" data-wow-delay="400ms">İletişime Geç</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- yazı Section -->
+
+    <!-- Start Pricing Table Section -->
+    <div id="pricing" class="section pricing-section">
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title">Paketler</h2>
+          <hr class="lines">
+          <p class="section-subtitle">İşinizi büyütmek ve dijital dünyada öne çıkmak için en uygun paketi seçin <br> ve EasyBusiness ile başarınıza odaklanın.</p>
+        </div>
+
+        <div class="row pricing-tables">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="pricing-table">
+              <div class="pricing-details">
+                <h2>Web site paketleri</h2>
+                <span>3500₺<br> <p style="font-size: medium;">den başlayan fiyatlarla</p></span>
+                <ul>
+                  <li>Temel/Orta/Gelişmiş Web Site</li>
+                  <li>Temel/Orta/Gelişmiş SEO Yönetimi</li>
+                  <li>Kurumsal Marka Tasarımı</li>
+                  <li>Yüksek Güvenlik</li>
+                  <li>Google Ad Yönetimi</li>
+                </ul>
+              </div>
+              <div class="plan-button">
+                <a href="{% url 'fiyatlandirma'%}" class="btn btn-common">Tüm detayları öğren</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="pricing-table">
+              <div class="pricing-details">
+                <h2>sosyal medya paketleri</h2>
+                <span>8500₺<br> <p style="font-size: medium;">den başlayan fiyatlarla</p></span>
+                <ul>
+                  <li>Gelişmiş Web Site ve Gelişmiş SEO Yönetimi</li>
+                  <li>Temel/Orta/Gelişmiş Sosyal Medya Yönetimi</li>
+                  <li>Aylık Rapor ve Mail Gönderimi</li>
+                  <li>Meta Reklam Yönetimi</li>
+                  <li>Google Ad Yönetimi</li>
+                </ul>
+              </div>
+              <div class="plan-button">
+                <a href="{% url 'fiyatlandirma'%}" class="btn btn-common">Tüm detayları öğren</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="pricing-table">
+              <div class="pricing-details">
+                <h2>yazılım paketleri</h2>
+                <span>15.500₺<br> <p style="font-size: medium;">den başlayan fiyatlarla</p></span>
+                <ul>
+                  <li>Temel/Orta/Gelişmiş Web Site</li>
+                  <li>Temel/Orta/Gelişmiş SEO Yönetimi</li>
+                  <li>Temel/Orta/Gelişmiş Sosyal Medya Yönetimi</li>
+                  <li>Logo ERP Paket</li>
+                  <li>Kurumsal Marka Tasarımı</li>
+                </ul>
+              </div>
+              <div class="plan-button">
+                <a href="{% url 'fiyatlandirma'%}" class="btn btn-common">Tüm detayları öğren</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+ <style>
+  #hover-gif {
+  width: 100%;
+  height: auto;
+}
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      var images = document.querySelectorAll(".hover-gif");
+
+      images.forEach(function(img) {
+          img.addEventListener("mouseenter", function() {
+              img.src = img.getAttribute("data-gif");
+          });
+
+          img.addEventListener("mouseleave", function() {
+              img.src = img.getAttribute("data-static");
+          });
+      });
+  });
+</script>
+
+
+    <!-- End Pricing Table Section -->
+
+    <!-- Counter Section Start -->
+    <div class="counters section" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row"> 
+          <div class="col-sm-6 col-md-3 col-lg-4">
+            <div class="facts-item">   
+              <div class="icon">
+                <i class="lnr lnr-clock"></i>
+              </div>             
+              <div class="fact-count">
+                <h3><span class="counter">33</span></h3>
+                <h4>Tamamlanan Proje</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-4">
+            <div class="facts-item">   
+              <div class="icon">
+                <i class="lnr lnr-briefcase"></i>
+              </div>            
+              <div class="fact-count">
+                <h3><span class="counter">50</span>+</h3>
+                <h4>Müşteri sayısı</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-4">
+            <div class="facts-item"> 
+              <div class="icon">
+                <i class="lnr lnr-user"></i>
+              </div>              
+              <div class="fact-count">
+                <h3><span class="counter">100</span>%</h3>
+                <h4>Müşteri Memnuniyeti</h4>
+              </div>
+            </div>
+          </div>
+                     
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Counter Section End -->
+
+   
+
+
+
+    <div class="page-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-5 py-3 wow fadeInUp">
+            <h2 class="mb-4">  Sıkça Sorulan  Sorular</h2>
+            
+            <a href="#" class="btn btn-gradient btn-split-icon rounded-pill">
+              <a href="#contact" class="btn btn-common wow fadeInUp page-scroll" data-wow-duration="1000ms" data-wow-delay="400ms">Bizimle İletişime Geçin</a>
+         
+          </div>
+
+
+
+          <div class="col-lg-7 py-3 no-scroll-x">
+            <div class="accordion accordion-gap" id="accordionFAQ">
+              <div class="accordion-item wow fadeInRight">
+                <div class="accordion-trigger" id="headingFour">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">EasyBusiness nedir?</button>
+                </div>
+                <div id="collapse1" class="collapse" aria-labelledby="headingFour" data-parent="#accordionFAQ">
+                  <div class="accordion-content">
+                    <p>EasyBusiness, işletmelerin dijital varlıklarını geliştirmek ve yönetmek için kapsamlı çözümler sunan bir platformdur. Web sitesi oluşturma, kurumsal marka tasarımı, sosyal medya yönetimi, Google reklam yönetimi ve meta reklam yönetimi gibi hizmetleri içeren çeşitli paketler sunar.</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item wow fadeInRight">
+                <div class="accordion-trigger" id="headingFive">
+                  <button class="btn" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">EasyBusiness Paketlerinin Avantajları Nelerdir?</button>
+                </div>
+                <div id="collapse2" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionFAQ">
+                  <div class="accordion-content">
+                    <p>EasyBusiness paketleri, işletmenizin dijital ihtiyaçlarını karşılamak için özel olarak tasarlanmıştır. Avantajları arasında profesyonel web tasarımı, marka bilinirliğini artırma, etkin sosyal medya yönetimi ve hedeflenmiş reklam kampanyaları yer alır. Ayrıca, paketlerimiz esnek ödeme seçenekleri ve özelleştirilebilir hizmetler sunar.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item wow fadeInRight">
+                <div class="accordion-trigger" id="headingSix">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">EasyBusiness Paketlerinde Kredi Kartına Taksit Seçeneği Var mı?</button>
+                </div>
+                <div id="collapse3" class="collapse" aria-labelledby="headingSix" data-parent="#accordionFAQ">
+                  <div class="accordion-content">
+                    <p>Evet, EasyBusiness paketlerinde kredi kartına taksit seçeneği bulunmaktadır. Bu sayede ödemelerinizi daha rahat bir şekilde yapabilirsiniz.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item wow fadeInRight">
+                <div class="accordion-trigger" id="headingSeven">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Paket Seçimi Yaparken Nelere Dikkat Etmeliyim?</button>
+                </div>
+                <div id="collapse4" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionFAQ">
+                  <div class="accordion-content">
+                    <p>Paket seçimi yaparken işletmenizin ihtiyaçlarını ve hedeflerini göz önünde bulundurmalısınız. Web sitesi, özel yazılım, sosyal medya yönetimi veya reklam kampanyaları gibi hangi alanlarda daha fazla desteğe ihtiyaç duyduğunuzu belirlemek, doğru paketi seçmenize yardımcı olacaktır.</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="accordion-item wow fadeInRight">
+                <div class="accordion-trigger" id="headingEight">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">EasyBusiness Paketlerinin Özellikleri Nelerdir?</button>
+                </div>
+                <div id="collapse5" class="collapse" aria-labelledby="headingEight" data-parent="#accordionFAQ">
+                  <div class="accordion-content">
+                    <p>EasyBusiness paketleri, işletmenizin dijital dünyada başarılı olması için kapsamlı hizmetler sunar. Paketlerimizde logo tasarımı, ERP entegrasyonu, sanal POS, modern web sitesi tasarımı, profesyonel e-posta hesapları, özel mobil uygulamalar, blog modülü, Google reklam yönetimi, kurumsal marka tasarımı, sosyal medya yönetimi, meta reklam yönetimi, SEO çalışmaları, uygulama mağazası entegrasyonu, toplu mail gönderimi ve aylık performans raporları gibi özellikler bulunmaktadır. Bu sayede, işletmenizin tüm dijital ihtiyaçlarını tek bir çatı altında karşılayarak, güçlü ve etkili bir online varlık oluşturmanızı sağlıyoruz.</p>
+    
+      
+                  </div>
+                </div>
+              </div>
+    
+              <div class="accordion-item wow fadeInRight">
+                <div class="accordion-trigger" id="headingNine">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">EasyBusiness Paketleri Arasından Hangisini Seçmeliyim?</button>
+                </div>
+                <div id="collapse6" class="collapse" aria-labelledby="headingNine" data-parent="#accordionFAQ">
+                  <div class="accordion-content">
+                    <p>İhtiyaçlarınıza ve bütçenize en uygun olan paketi seçmelisiniz. Eğer yeni bir işletmeyseniz, başlangıç paketleriyle başlayabilirsiniz. Daha gelişmiş ihtiyaçlarınız varsa, daha kapsamlı paketleri tercih edebilirsiniz.</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="accordion-item wow fadeInRight">
+                <div class="accordion-trigger" id="headingNine">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse6">Neden EasyBusiness Paketi Satın Almalıyım?</button>
+                </div>
+                <div id="collapse7" class="collapse" aria-labelledby="headingNine" data-parent="#accordionFAQ">
+                  <div class="accordion-content">
+                    <p>EasyBusiness paketleri, işletmenizin dijital dünyada başarılı olmasını sağlamak için kapsamlı ve profesyonel çözümler sunar. Uzman ekibimiz, işletmenizin ihtiyaçlarına uygun çözümler üreterek size zaman ve maliyet avantajı sağlar.</p>
+                  </div>
+                </div>
+              </div>
+    
+              
+              <div class="accordion-item wow fadeInRight">
+                <div class="accordion-trigger" id="headingNine">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse6">EasyBusiness Paketi Satın Aldıktan Sonra Süreç Nasıl İlerler?</button>
+                </div>
+                <div id="collapse8" class="collapse" aria-labelledby="headingNine" data-parent="#accordionFAQ">
+                  <div class="accordion-content">
+                    <p>Paket satın alımınızın ardından, ekibimiz sizinle iletişime geçer ve ihtiyaçlarınızı detaylı olarak değerlendirir. Ardından, belirlenen plana göre çalışmalar başlar ve düzenli olarak sizinle iletişimde kalınarak proje ilerleyişi hakkında bilgilendirilirsiniz.</p>
+                  </div>
+                </div>
+              </div>
+    
+  
+    
+              <div class="accordion-item wow fadeInRight">
+                <div class="accordion-trigger" id="headingNine">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse6">EasyBusiness Ücreti Ne Kadar?</button>
+                </div>
+                <div id="collapse10" class="collapse" aria-labelledby="headingNine" data-parent="#accordionFAQ">
+                  <div class="accordion-content">
+                    <p>EasyBusiness paketlerinin ücretleri, seçtiğiniz hizmetlere ve paketin kapsamına göre değişiklik göstermektedir. Detaylı bilgi için paketlerimiz sayfasını ziyaret edebilir veya bizimle iletişime geçebilirsiniz.</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="accordion-item wow fadeInRight">
+                <div class="accordion-trigger" id="headingNine">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse6">EasyBusiness Paket Fiyatlarına Sanal POS Kurulum İşlemi Dahil mi?</button>
+                </div>
+                <div id="collapse11" class="collapse" aria-labelledby="headingNine" data-parent="#accordionFAQ">
+                  <div class="accordion-content">
+                    <p>Evet, EasyBusiness paket fiyatlarına sanal POS kurulumu dahildir. Bu sayede online ödemeleri kolaylıkla kabul edebilirsiniz.</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="accordion-item wow fadeInRight">
+                <div class="accordion-trigger" id="headingNine">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse6">EasyBusiness Paketimi Daha Sonraki Süreçlerde Yükseltebilir miyim?</button>
+                </div>
+                <div id="collapse12" class="collapse" aria-labelledby="headingNine" data-parent="#accordionFAQ">
+                  <div class="accordion-content">
+                    <p>Evet, mevcut EasyBusiness paketinizi ihtiyaçlarınız değiştikçe daha üst seviyelere yükseltebilirsiniz. Bunun için bizimle iletişime geçerek detaylı bilgi alabilirsiniz.</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="accordion-item wow fadeInRight">
+                <div class="accordion-trigger" id="headingNine">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse6">EasyBusiness Paketi Satın Aldıktan Sonra Site Kurulumu için Yazılım Bilmem Gerekir mi?</button>
+                </div>
+                <div id="collapse13" class="collapse" aria-labelledby="headingNine" data-parent="#accordionFAQ">
+                  <div class="accordion-content">
+                    <p>Hayır, EasyBusiness paketi satın aldıktan sonra site kurulumu için herhangi bir yazılım bilgisine sahip olmanız gerekmez. Tüm teknik detaylar ve kurulum süreçleri uzman ekibimiz tarafından yönetilir.
+                      
+                    </p>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+
+ <!-- testimonial Section Start -->
+ <div id="testimonial" class="section" data-stellar-background-ratio="0.1">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-12">
+        <div class="touch-slider owl-carousel owl-theme">
+          <div class="testimonial-item">
+            <img src="{% static 'img/testimonial/customer.jpg'%}" alt="Client Testimonoal" />
+            <div class="testimonial-text">
+              <p>EasyBusiness ile çalışmak, reklam kampanyalarımızı ve sosyal medya stratejimizi güçlendirmemize yardımcı oldu.24/7 destekleri gerçekten işimizi kolaylaştırıyor. </p>
+              <h3>Uğur ÇAYRAK</h3>
+              <span>Founder-CEO @ UBS  </span>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <img src="{% static 'img/testimonial/customer.jpg'%}" alt="Client Testimonoal" />
+            <div class="testimonial-text">
+              <p>EasyBusiness ile işbirliği yapmak, iş süreçlerimizi büyük ölçüde kolaylaştırdı. Web sitemizi sadece hızlı değil, aynı zamanda profesyonel bir şekilde oluşturduk.</p>
+              <h3>Haluk UYSAL</h3>
+              <span>Founder @ TrikoModa</span>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <img src="{% static 'img/testimonial/customer.jpg'%}" alt="Client Testimonoal" />
+            <div class="testimonial-text">
+              <p>EasyBusiness’in sosyal medya yönetim paketlerinden çok memnun kaldık. Hedef kitlemize ulaşmamızda büyük rol oynadılar. </p>
+              <h3>Hüseyin ÇAKAR</h3>
+              <span>Founder @ HC Design Studio</span>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <img src="{% static 'img/testimonial/customer.jpg'%}" alt="Client Testimonoal" />
+            <div class="testimonial-text">
+              <p>EasyBusiness’in sunduğu tüm hizmetlerden memnun kaldık. Web sitemiz çok daha profesyonel görünüyor ve sosyal medya hesaplarımız çok daha etkili yönetiliyor. </p>
+              <h3>Coşkun YILMAZ</h3>
+              <span>Manager @ Arafa Holding</span>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <img src="{% static 'img/testimonial/customer.jpg'%}" alt="Client Testimonoal" />
+            <div class="testimonial-text">
+              <p>EasyBusiness’in müşteri destek ekibi her zaman yardımsever ve profesyoneldi. Paket seçiminde bize yardımcı oldular ve hizmet kalitelerinden son derece memnun kaldık. </p>
+              <h3>Osman BAHADUR</h3>
+              <span>Manager @ Bahadur Holding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>        
+  </div>
+</div>
+<!-- testimonial Section Start -->
+
+
+
+
+
+
+
+
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="section" data-stellar-background-ratio="-0.2">      
+      <div class="contact-form">
+        <div class="container">
+          <div class="row">     
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="contact-us">
+                <h3>Bizimle İletişime Geçin</h3>
+                <div class="contact-address">
+                  <p>İstanbul, Türkiye </p>
+                  <p class="phone">Telefon-1: <span>(+90 541 961 62 56)</span></p>
+                  <p class="phone">Telefon-2: <span>(+90 506 886 57 34)</span></p>
+                  <p class="email">E-mail: <span>(info@octopusoftware.com)</span></p>
+                </div>
+                <div class="social-icons">
+                  <ul>
+                    <li class="facebook"><a href="https://www.instagram.com/easybusiness.tr"><i class="fa fa-instagram"></i></a></li>
+                    <li class="twitter"><a href="https://x.com/easybusinesstr"><i class="fa fa-twitter"></i></a></li>
+                    <li class="linkedin"><a href="https://www.tiktok.com/@easybusinesstr"><i class="fa fa-tiktok"></i></a></li>
+                    <li class="dribbble"><a href="https://www.linkedin.com/company/easybusiness-tr"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>     
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="contact-block">
+                <form method="POST">
+                  {% csrf_token %}
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="form-group">
+                              <input type="text" class="form-control" id="name" name="name" placeholder="Ad Soyad" autocomplete="name" required>
+                          </div>
+                      </div>
+                      <div class="col-md-12">
+                          <div class="form-group">
+                              <input type="email" placeholder="E-mail" id="email" class="form-control" name="email" autocomplete="email" required>
+                          </div>
+                      </div>
+                      <div class="col-md-12">
+                          <div class="form-group">
+                              <textarea class="form-control" id="subject" placeholder="Mesajınız" name="subject" rows="8" autocomplete="off" required></textarea>
+                          </div>
+                          <div class="submit-button text-center">
+                              <input type="submit" class="btn btn-common" id="submit" value="Gönder">
+                          </div>
+                      </div>
+                  </div>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+      <div id="popup">
+        <div class="col-lg-6 col-sm-6 col-xs-12">
+          <div class="yazi"> Bizimle İletişime Geçtiğiniz İçin Teşekkür Ederiz. 
+            | &#160;En kısa sürede sizinle iletişime geçeceğiz !!</div>
+        </div>
+      </div>      
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var success = "{{ success|escapejs }}";
+            if (success === "True") {
+                var popup = document.getElementById('popup');
+                popup.style.display = 'block';
+                setTimeout(function () {
+                    popup.style.display = 'none';
+                }, 5000);
+            }
+        });
+    </script> 
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>          
+      <div class="container">
+        <div class="row">
+          <!-- Footer Links -->
+          <div class="col-lg-6 col-sm-6 col-xs-12">
+            <ul class="footer-links">
+              <li>
+                <a class="page-scroll" href="#hero-area">Anasayfa</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="#services">Hizmetlerimiz</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="#features">Neden Biz?</a>
+              </li>
+              <li>
+                <a href="{% url 'fiyatlandirma'%}">Paketler</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-xs-12">
+            <div class="copyright">
+              <p>&copy; 2024 Octopus Software - Tüm hakları saklıdır. <a rel="nofollow" href="https://octopusoftware.com"></a></p>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End --> 
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lnr lnr-arrow-up"></i>
+    </a>
+    
+    <div id="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>     
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="{% static 'js/jquery-min.js'%}"></script>
+    <script src="{% static 'js/popper.min.js'%}"></script>
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'js/jquery.mixitup.js'%}"></script>
+    <script src="{% static 'js/nivo-lightbox.js'%}"></script>
+    <script src="{% static 'js/owl.carousel.js'%}"></script>    
+    <script src="{% static 'js/jquery.stellar.min.js'%}"></script>    
+    <script src="{% static 'js/jquery.nav.js'%}"></script>    
+    <script src="{% static 'js/scrolling-nav.js'%}"></script>    
+    <script src="{% static 'js/jquery.easing.min.js'%}"></script>    
+    <script src="{% static 'js/smoothscroll.js'%}"></script>    
+    <script src="{% static 'js/jquery.slicknav.js'%}"></script>     
+    <script src="{% static 'js/wow.js'%}"></script>   
+    <script src="{% static 'js/jquery.vide.js'%}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js'%}"></script>    
+    <script src="{% static 'js/jquery.magnific-popup.min.js'%}"></script>    
+    <script src="{% static 'js/waypoints.min.js'%}"></script>    
+    <script src="{% static 'js/form-validator.min.js'%}"></script>
+    <script src="{% static 'js/contact-form-script.js'%}"></script>   
+    <script src="{% static 'js/main.js'%}"></script>
+
+  </body>
+</html>
