@@ -28,9 +28,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', 'bilo-production.up.railway.app']
 
-CSRF_TRUSTED_ORIGINS = ['https://bilo-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['localhost', '127.0.0.1', '127.0.0.1:8000', 'bilo-production.up.railway.app']
 
-
+SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
 # Application definition
 
 INSTALLED_APPS = [
