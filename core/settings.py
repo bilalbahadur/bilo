@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-(_aaq2e3c#pj7l61j__%nxc0&)5s=rxegy76=k^4$t@m2*0j_z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'bilo-production.up.railway.app']
+ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = ['https://bilo-production.up.railway.app']
 
