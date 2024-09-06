@@ -14,9 +14,9 @@ SECRET_KEY = '0)%%ba^ttmncwjiq=%00@$i_gh5@-7w4yj**vozc^5-#25q+1$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['','*']
+ALLOWED_HOSTS = ['bilo-production.up.railway.app','*']
 
-CSRF_TRUSTED_ORIGINS = ['https://myapp.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://bilo-production.up.railway.app']
 
 # Application definition
 
