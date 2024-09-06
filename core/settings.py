@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '0)%%ba^ttmncwjiq=%00@$i_gh5@-7w4yj**vozc^5-#25q+1$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['bilo-production.up.railway.app','*']
 
